@@ -1,7 +1,7 @@
 import { Person } from "./model/person";
 
-export function getPersonList(): Person[] {
-    return [
+const personList: Person[] =
+    [
         {
             id: 1,
             name: "Nicolas - Caba",
@@ -27,4 +27,8 @@ export function getPersonList(): Person[] {
             }
         },
     ]
+
+
+export function getPersonList() {
+    return personList;
 }
