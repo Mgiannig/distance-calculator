@@ -4,7 +4,7 @@ export function getPersonList(): Person[] {
     return [
         {
             id: 1,
-            name: "Nicolas",
+            name: "Nicolas - Caba",
             location: {
                 lat: -34.596454,
                 lng: -58.40896
@@ -12,35 +12,19 @@ export function getPersonList(): Person[] {
         },
         {
             id: 2,
-            name: "Juana",
+            name: "Juana - Bernal",
             location: {
-                lat: 222,
-                lng: 222
+                lat: -34.7,
+                lng: -58.2833333
             }
         },
         {
             id: 3,
             name: "Charly",
             location: {
-                lat: 456,
-                lng: 654
+                lat: -34.6507,
+                lng: -58.622
             }
         },
-        {
-            id: 4,
-            name: "Michael",
-            location: {
-                lat: 123,
-                lng: 123
-            }
-        },
-        {
-            id: 5,
-            name: "Ana",
-            location: {
-                lat: 123,
-                lng: 123
-            }
-        }
     ]
 }

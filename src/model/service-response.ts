@@ -6,7 +6,6 @@ export interface ServiceResponse {
 }
 
 export interface BranchInfo {
-    originAddress: string;
     branchLocation: string;
     distance: string;
     meters: number;
