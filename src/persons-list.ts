@@ -12,10 +12,10 @@ const personList: Person[] =
         },
         {
             id: 2,
-            name: "Juana - Bernal",
+            name: "Juana - Quilmes",
             location: {
-                lat: -34.7,
-                lng: -58.2833333
+                lat: -34.7241800,
+                lng: -58.2526500
             }
         },
         {

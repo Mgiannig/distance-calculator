@@ -44,11 +44,12 @@ app.get("/excel", async (req: Request, res: Response) => {
             };
 
             response.push(userInfo);
-            res.send(response);
+
         }
     } catch (error) {
         res.send(`Encountered Error, please try again later ${error}`);
     }
+    res.send(response);
 
 
 })
