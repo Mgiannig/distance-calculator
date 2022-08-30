@@ -4,7 +4,7 @@ const personList: Person[] =
     [
         {
             id: 1,
-            name: "Nicolas - Caba",
+            name: "Nicolas",
             location: {
                 lat: -34.596454,
                 lng: -58.40896
@@ -12,7 +12,7 @@ const personList: Person[] =
         },
         {
             id: 2,
-            name: "Juana - Quilmes",
+            name: "Juana",
             location: {
                 lat: -34.7241800,
                 lng: -58.2526500

@@ -1,5 +1,4 @@
 export interface ServiceResponse {
-    maxDistanceInMeters: number;
     name: string;
     id: number;
     availableBranches: BranchInfo[]
