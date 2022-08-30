@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-const app = express();
+require("dotenv").config();
 import { BranchOffice } from './model/branch-office';
 import path from 'path';
 import reader from 'xlsx';
@@ -12,7 +12,7 @@ import { LatLngLiteral } from '@googlemaps/google-maps-services-js';
 var _ = require('lodash');
 
 const port = process.env.PORT || 3000;
-
+const app = express();
 app.get("/excel", async (req: Request, res: Response) => {
     const branches: BranchOffice[] = getBranchesFromFile()
     const persons: Person[] = getPersonList();
@@ -76,7 +76,7 @@ function getBranchesFromFile(): BranchOffice[] {
     return data;
 }
 
-function shouldIncludeBranch(personCoordinates: LatLngLiteral, branchCoordinates: LatLngLiteral) {
+function shouldIncludeBranch(personCoordinates: LatLngLiteral, branchCoordinates: LatLngLiteral): boolean {
     const latDifference = Math.abs(personCoordinates.lat - branchCoordinates.lat)
     const lngDiff = Math.abs(personCoordinates.lng - branchCoordinates.lng)
     return latDifference < 0.05 && lngDiff < 0.05;
