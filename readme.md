@@ -1,13 +1,11 @@
-# Exercise 1
+
 
 ## Intro
-
-Thank you for giving me the opportunity to perform the exercise. Whatever the outcome is, I can already say that I learned something and had fun with the google API.
-For this exercise, I went over the Burger King branches and, given an invented list of users, I return the closest branches for each user. The API used was the Google Distance Matrix API.
+For this exercise, I went over the Burger King branches provided in a file and, given an invented list of users, I return the closest branches for each user. The API used was the Google Distance Matrix API.
 
 ### Assumptions
 
-I assume that the candidates are going to travel by bus, so I passed said parameter to the google API.
+I assume that the candidates are going to travel by public transportation (bus), so I passed said parameter to the google API.
 
 ### Challenges
 
@@ -19,9 +17,8 @@ At first, I jumped the gun and ran the google API call for each person. This was
 maxDistance: number
 ```
 
-The maximum distance that the service will consider for its users.
-The service won't return results over that number.
-Default 5000
+The maximum distance in meters that the service will consider for its users.
+Default 5000 meters
 
 ## Instruction
 
