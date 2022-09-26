@@ -9,9 +9,9 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.get("/branches", async (req: Request, res: Response) => {
   const persons: Person[] = getPersonList();
-  const maxDistance: number = parseInt(req.query.maxDistance as string) || 5000;
+  const maxDistanceInMeters: number = parseInt(req.query.maxDistance as string) || 5000;
   try {
-    const response: ServiceResponse[] = await execute(persons, maxDistance);
+    const response: ServiceResponse[] = await execute(persons, maxDistanceInMeters);
     res.send(response);
   } catch (error) {
     res.send(`Encountered Error, please try again later ${error}`);
