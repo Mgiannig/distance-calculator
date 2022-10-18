@@ -7,9 +7,6 @@ For this exercise, I went over the Burger King branches provided in a file and, 
 
 I assume that the candidates are going to travel by public transportation (bus), so I passed said parameter to the google API.
 
-### Challenges
-
-At first, I jumped the gun and ran the google API call for each person. This was extremely expensive in terms of performance and scalability. Given that, I started to think of a way to optimize this by reducing the API calls. At first, I created a very simple function to calculate the estimated proximity between 2 points given the coordinates. It worked like a charm and I was able to drastically improve the performance of the API. However, after doing more research, I found a Javascript implementation of the Haversine formula, so I decided to use it to filter out the branches that would be too far from the candidate to even be considered.
 
 ## Parameters
 
